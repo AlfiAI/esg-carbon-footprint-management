@@ -5,7 +5,7 @@ const UserProfile = () => {
   return (
     <Container>
       <Typography variant="h4" gutterBottom>User Profile</Typography>
-      {/* Add your content here */}
+      <Typography variant="body1">Manage your user profile and view your activities.</Typography>
     </Container>
   );
 };

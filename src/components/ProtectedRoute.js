@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Navigate } from 'react-router-dom';  // Updated
+import { Route, Navigate } from 'react-router-dom';
 import jwtDecode from 'jwt-decode';
 
 const ProtectedRoute = ({ component: Component, ...rest }) => {
@@ -22,13 +22,7 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
       {...rest}
-      render={props =>
-        isAuthenticated() ? (
-          <Component {...props} />
-        ) : (
-          <Navigate to="/login" />  // Updated
-        )
-      }
+      element={isAuthenticated() ? <Component /> : <Navigate to="/login" />}
     />
   );
 };

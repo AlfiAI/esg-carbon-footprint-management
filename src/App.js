@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // Added Navigate for redirect
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import EducationalModules from './components/EducationalModules';
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/carbon-footprint-analysis" element={<ProtectedRoute component={CarbonFootprintAnalysis} />} />
         <Route path="/compliance-tracking" element={<ProtectedRoute component={ComplianceTracking} />} />
         <Route path="/user-profile" element={<ProtectedRoute component={UserProfile} />} />
-        <Route path="*" element={<Navigate to="/" />} /> {/* Redirect any unmatched paths to Home */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
