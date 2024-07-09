@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/esg-carbon-footprint-management/static/js/main.3f4d90b5.js",
+    "main.js": "/esg-carbon-footprint-management/static/js/main.84aabd26.js",
     "index.html": "/esg-carbon-footprint-management/index.html",
-    "main.3f4d90b5.js.map": "/esg-carbon-footprint-management/static/js/main.3f4d90b5.js.map"
+    "main.84aabd26.js.map": "/esg-carbon-footprint-management/static/js/main.84aabd26.js.map"
   },
   "entrypoints": [
-    "static/js/main.3f4d90b5.js"
+    "static/js/main.84aabd26.js"
   ]
 }
