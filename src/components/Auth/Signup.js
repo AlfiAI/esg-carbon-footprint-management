@@ -18,7 +18,6 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Make an API call to Flask backend for user signup
     axios.post('/api/signup', formData)
       .then(response => {
         console.log(response.data);
